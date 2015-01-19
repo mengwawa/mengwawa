@@ -1,0 +1,320 @@
+{
+   "_key":"~",
+   "educations":{
+      "_total":2,
+      "values":[
+         {
+            "degree":"Master of Science (M.S.)",
+            "endDate":{
+               "year":2013
+            },
+            "fieldOfStudy":"Bioinformatics and molecular biochemistry",
+            "id":94867827,
+            "schoolName":"The George Washington University",
+            "startDate":{
+               "year":2011
+            }
+         },
+         {
+            "activities":"1.Huazhong Normal University research award (2009, 2010) \n2. Excellent Miss of Wuhan City 2010",
+            "degree":"Bachelor's degree",
+            "endDate":{
+               "year":2010
+            },
+            "fieldOfStudy":"Biotechnology / Business Administration",
+            "id":119713957,
+            "schoolName":"Huazhong Normal University",
+            "startDate":{
+               "year":2007
+            }
+         }
+      ]
+   },
+   "firstName":"Meng",
+   "headline":"Software Developer at IntegriDATA Business & Technology Solutions, LLC",
+   "id":"0KacbQiG7D",
+   "lastName":"Wang",
+   "pictureUrls":{
+      "_total":1,
+      "values":[
+         "https://media.licdn.com/mpr/mprx/0_1q5oZ3_uHt5YOVs3q6EXY8Oau1UpUM93q8RbYhrG3bV00Zk7nXX6pQXIPB1"
+      ]
+   },
+   "positions":{
+      "_total":6,
+      "values":[
+         {
+            "company":{
+               "id":796867,
+               "name":"IntegriDATA Business & Technology Solutions, LLC"
+            },
+            "id":602041953,
+            "isCurrent":true,
+            "startDate":{
+               "month":3,
+               "year":2014
+            },
+            "summary":"•\tDeveloped a fundraising system that automates company core business (fundraising) workflow, and provides a variety of features to satisfy the requirements of end users using WPF based on N-Tier Architecture\n•\tFollowed Agile methodology to manage the development process\n•\tDesigned friendly user interface and layout using XAML along with Telerik WPF third party controls\n•\tCreated RESTful (JSON formatted) web API as service layer to implement Service Oriented Architecture (SOA)\n•\tBuilt thick client application with Prism framework and Model-View-ViewModel (MVVM) architecture\n•\tUsed Dapper as a mini-ORM tool along with ADO.NET to connect the application and database\n•\tImplemented global caching to optimize the performance of the application \n•\tHandled passing exceptions back to UI through N-tiers, with web service error handling and JSON (de) serialization  \n•\tPracticed multi-threading using ThreadPool, Task Parallel Library and Event wait handles (thread signaling)\n•\tUsed custom configuration section, XML and reflection to create dynamic factory class\n•\tUsed several design patterns, like Inversion of Control, Service Locator, Dependency Injection, Events and Singleton\n•\tCreated and modified Stored Procedure and query with Transact-SQL in MS SQL Server 2012\n•\tMaintained and managed different versions of source code using Team Foundation Server (TFS)",
+            "title":"Software Developer",
+            "even":0
+         },
+         {
+            "company":{
+               "id":11350,
+               "name":"Marlabs Inc."
+            },
+            "endDate":{
+               "month":12,
+               "year":2013
+            },
+            "id":514091580,
+            "isCurrent":false,
+            "startDate":{
+               "month":6,
+               "year":2013
+            },
+            "summary":"•\tUpdated C# skills, using delegate, event, LINQ, and MVC to create applications.\n•\tCreated dynamic web pages with ASP.NET and JavaScript for medical beneficial website.\n•\tWrote T-SQL stored procedure, functions in SQL server management studio.\n•\tCreated a single page application using MVC4, Ajax, Json for lab order system.\n•\tCreated complex SSRS reports within BIDS.",
+            "title":"Intern Developer",
+            "even":1
+         },
+         {
+            "company":{
+               "id":11358,
+               "name":"Children's National Health System"
+            },
+            "endDate":{
+               "month":5,
+               "year":2013
+            },
+            "id":514092612,
+            "isCurrent":false,
+            "startDate":{
+               "month":11,
+               "year":2012
+            },
+            "summary":"•\tWorked on data analysis/mining for diabetes genes using R/Python\n•\tPresented dynamic data using D3.js, HTML, JavaScript. \n•\tWorked with spreadsheet to generate reports.",
+            "title":"Co-op",
+            "even":0
+         },
+         {
+            "company":{
+               "id":4644,
+               "name":"George Washington University"
+            },
+            "endDate":{
+               "month":5,
+               "year":2013
+            },
+            "id":365568489,
+            "isCurrent":false,
+            "startDate":{
+               "month":9,
+               "year":2012
+            },
+            "summary":"Role: project management and consulting on EMR building",
+            "title":"Consultant",
+            "even":1
+         },
+         {
+            "company":{
+               "id":4644,
+               "name":"George Washington University"
+            },
+            "endDate":{
+               "month":9,
+               "year":2012
+            },
+            "id":270956214,
+            "isCurrent":false,
+            "startDate":{
+               "month":11,
+               "year":2011
+            },
+            "title":"Intern at Office of Entrepreneurship",
+            "even":0
+         },
+         {
+            "company":{
+               "id":4644,
+               "name":"George Washington University"
+            },
+            "endDate":{
+               "month":5,
+               "year":2012
+            },
+            "id":270956962,
+            "isCurrent":false,
+            "startDate":{
+               "month":8,
+               "year":2011
+            },
+            "summary":"•\tStatistical analysis using ANOVA, multivariate regression, clustering & mixed model regression in R and EXCEL\n•\tBiological interpretation using IPA & Targetscan",
+            "title":"Research Assistant",
+            "even":1
+         }
+      ]
+   },
+   "publicProfileUrl":"https://www.linkedin.com/in/namewang",
+   "skills":{
+      "_total":26,
+      "values":[
+         {
+            "id":602041977,
+            "skill":{
+               "name":"C#"
+            }
+         },
+         {
+            "id":602041978,
+            "skill":{
+               "name":"Microsoft SQL Server"
+            }
+         },
+         {
+            "id":602041979,
+            "skill":{
+               "name":"Web Services"
+            }
+         },
+         {
+            "id":602041980,
+            "skill":{
+               "name":"Software Engineering"
+            }
+         },
+         {
+            "id":602041981,
+            "skill":{
+               "name":"REST"
+            }
+         },
+         {
+            "id":602041982,
+            "skill":{
+               "name":"Python"
+            }
+         },
+         {
+            "id":602041983,
+            "skill":{
+               "name":".NET"
+            }
+         },
+         {
+            "id":602041984,
+            "skill":{
+               "name":"Data Mining"
+            }
+         },
+         {
+            "id":602041985,
+            "skill":{
+               "name":"Enterprise Software"
+            }
+         },
+         {
+            "id":602041986,
+            "skill":{
+               "name":"R"
+            }
+         },
+         {
+            "id":602041987,
+            "skill":{
+               "name":"SAS"
+            }
+         },
+         {
+            "id":602041988,
+            "skill":{
+               "name":"WPF"
+            }
+         },
+         {
+            "id":602041989,
+            "skill":{
+               "name":"ASP.NET MVC"
+            }
+         },
+         {
+            "id":602041990,
+            "skill":{
+               "name":"T-SQL"
+            }
+         },
+         {
+            "id":602041991,
+            "skill":{
+               "name":"jQuery"
+            }
+         },
+         {
+            "id":602041992,
+            "skill":{
+               "name":"HTML"
+            }
+         },
+         {
+            "id":602041993,
+            "skill":{
+               "name":"Bioinformatics"
+            }
+         },
+         {
+            "id":602041994,
+            "skill":{
+               "name":"Market Research"
+            }
+         },
+         {
+            "id":602041995,
+            "skill":{
+               "name":"Statistics"
+            }
+         },
+         {
+            "id":602041996,
+            "skill":{
+               "name":"SQL"
+            }
+         },
+         {
+            "id":602041997,
+            "skill":{
+               "name":"Molecular Biology"
+            }
+         },
+         {
+            "id":602041998,
+            "skill":{
+               "name":"Marketing"
+            }
+         },
+         {
+            "id":602041999,
+            "skill":{
+               "name":"Strategic Planning"
+            }
+         },
+         {
+            "id":602042000,
+            "skill":{
+               "name":"Business Planning"
+            }
+         },
+         {
+            "id":602042001,
+            "skill":{
+               "name":"Patent Portfolio Analysis"
+            }
+         },
+         {
+            "id":602042002,
+            "skill":{
+               "name":"Competitive Analysis"
+            }
+         }
+      ]
+   },
+   "summary":"Dedicated full stack developer with 1 year hands on experience, with good understanding of software prototype / pattern design, proficiente in .NET, web service, T-SQL and agile methodology"
+}

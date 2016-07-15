@@ -15,7 +15,7 @@ $(document).ready(function(){
     setTimeout(function(){
         $('html,body').animate({scrollTop: 0}, 800);
     }, 400);
-    
+
 });
 var appModule = angular.module('profiledemo', ['ngRoute']);
 
@@ -32,7 +32,7 @@ appModule.controller('AppController', ['$scope', '$rootScope', 'TagService', '$l
         else if(linkedInId === 'mengwang'){
             $scope.staticApp = true;
             getStaticData();
-        } 
+        }
 
         //iphone: landspace 568x212, vertical 320x460
         $scope.possiblyOnMobile = window.innerWidth <= 568 || window.innerWidth === 1024 || window.innerWidth === 768;
@@ -94,7 +94,7 @@ appModule.controller('AppController', ['$scope', '$rootScope', 'TagService', '$l
     }
 }]);
 
-appModule.controller('UIController', ['$scope', '$rootScope', 'TagService', 
+appModule.controller('UIController', ['$scope', '$rootScope', 'TagService',
     function ($scope, $rootScope, TagService) {
         $scope.loadPercentage = {
             linkedIn:   0,
@@ -110,11 +110,11 @@ appModule.controller('UIController', ['$scope', '$rootScope', 'TagService',
                 $scope.loadPercentage.linkedIn = 100;
                 $scope.completeSection(0);
 
-                $scope.profile = TagService.profile;   
-                $scope.summary = TagService.profile.summary || ' ';  
-                $scope.educations = TagService.educations || [];   
+                $scope.profile = TagService.profile;
+                $scope.summary = TagService.profile.summary || ' ';
+                $scope.educations = TagService.educations || [];
                 $scope.skills = TagService.skills || [];
-                $scope.positions = TagService.positions || [];    
+                $scope.positions = TagService.positions || [];
     });
 
 
@@ -132,7 +132,7 @@ appModule.controller('UIController', ['$scope', '$rootScope', 'TagService',
 
         $scope.displaySectionContent = function(section, contentProperty) {
             $scope.loadPercentage[contentProperty] = 0;
-            
+
             if($scope[contentProperty]) {
                 $scope.loadPercentage[contentProperty] = 100;
                 $scope.completeSection(section);
@@ -152,11 +152,11 @@ appModule.controller('UIController', ['$scope', '$rootScope', 'TagService',
             }
             return 100;
         }
-        
+
         $scope.twinkleStyle = function(value, index, length) {
             var transitionString = 'color 0.5s ease, text-shadow 0.5s ease, ' + 'top 0.4s ease ' +  (value * 3).toFixed(2) + 's' + ',' + 'opacity 0.4s ease ' +  value * 3 + 's' + ';';// + ',' + 'transform 0.4s ease ' + ';';
-            var animationDelayString = (10 + value * 6) + 's' + ';'; 
-            var fontSizeWeight = 1.0 * index / length < 0.06 ? 32 : (1.0 * index / length < 0.36 ? 24 : 16); 
+            var animationDelayString = (10 + value * 6) + 's' + ';';
+            var fontSizeWeight = 1.0 * index / length < 0.06 ? 32 : (1.0 * index / length < 0.36 ? 24 : 16);
             var styleString = 'font-size: ' + (fontSizeWeight + value * 8) + 'px' + ';' +
             'line-height: ' + '1.5' + ';' +
             /*'top: ' + (loadPercentage === 100) && '0' || '10px' + ';' +*/
@@ -229,11 +229,11 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
     this.loadProfile = function(INProfile) {
         if(INProfile) {
             that.profile = INProfile;
-            that.positions = groupPositionByYear(INProfile.positions);  
+            that.positions = groupPositionByYear(INProfile.positions);
 
             that.skills = flattenSkills(INProfile.skills);
             that.educations = INProfile.educations.values;
-            
+
             console.log(that.profile);
             getCompanyLogos(INProfile.positions).then(function(result){
                 console.log(result);
@@ -248,11 +248,11 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
             $http.get('data/meng_profile.json').success(function(data){
                 var INProfile = data;
                 that.profile = INProfile;
-                that.positions = groupPositionByYear(INProfile.positions);  
+                that.positions = groupPositionByYear(INProfile.positions);
 
                 that.skills = flattenSkills(INProfile.skills);
                 that.educations = INProfile.educations.values;
-                
+
                 console.log(that.profile);
                 that.positions = getStaticCompanyLogos(INProfile.positions);
                 that.positions = groupPositionByYear(that.positions);
@@ -262,7 +262,7 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
                 // $rootScope.$broadcast('PROFILE', null);
             });
         }
-        
+
     }
 
     function flattenSkills(INSkills) {
@@ -307,15 +307,15 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
                     deferred.resolve(results);
                 }
                 else {
-                    deferred.reject(results);    
+                    deferred.reject(results);
                 }
-                
+
             })
             .error(function(error){
                 //in case of network error, throttle, etc.
                 console.error('asyncLogoUrl error: ', angular.toJson(error, true))
                 deferred.reject(error);
-            });            
+            });
         }
 
 
@@ -354,7 +354,7 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
         else if(positionsArray.values && angular.isArray(positionsArray.values)) {
             positions = positionsArray.values;
         }
-        
+
         var a = [];
 
         if(positions.length === 0 || (positions[0] && !positions[0].startDate)) {
@@ -380,7 +380,7 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
                     even = 1 - even;
                 }
                 else {
-                    //second one and on, compare with the previous one,                 
+                    //second one and on, compare with the previous one,
                     var lastPosition = a[a.length - 1];
                     //if it starts in the new year, then push a year mark first
                     if (lastPosition.startDate.year !== position.startDate.year) {
@@ -389,7 +389,7 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
                     //if it is in the same year, just push the position
                     position.even = even;
                     a.push(position);
-                    
+
                     even = 1 - even;
                 }
             });
@@ -405,8 +405,8 @@ appModule.directive('loadProgressIcon', [function () {
         restrict: 'A',
         replace: true,
         scope: {
-            iconclass: '@', 
-            progress: '@', 
+            iconclass: '@',
+            progress: '@',
             reverse: '@'
         },
         template: '<div class="glyph-progress" ng-class="{\'reverse\': reverse}"> \
@@ -420,13 +420,13 @@ appModule.directive('loadProgressIcon', [function () {
                     setTimeout(function(){
                         element.addClass('loaded');
                     },100)
-                    
+
                 }
                 else if(parseInt(newValue) === 0) {
                     setTimeout(function(){
                         element.removeClass('loaded');
                     }, 100);
-                    
+
                 }
             })
         }
@@ -456,11 +456,11 @@ appModule.filter('forHowLong', function(){
                 month: now.getMonth() + 1
             }
         }
-        
+
         if (position.startDate && position.endDate) {
             var yearLong = position.endDate.year - position.startDate.year,
             monthLong = position.endDate.month - position.startDate.month;
-            
+
             if (monthLong < 0) {
                 var totalLongInMonth = yearLong * 12 + monthLong;
                 yearLong = Math.floor(totalLongInMonth / 12);
@@ -502,7 +502,7 @@ appModule.directive('breakAtN', [function () {
 
             element.html(htmlString);
             element.append('<div class="mask"></div>');
-        });     
+        });
 
         }
     };
